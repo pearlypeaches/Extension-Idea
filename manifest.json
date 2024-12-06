@@ -1,0 +1,52 @@
+{
+  "manifest_version": 3,
+  "name": "First extension by pearly",
+  "version": "2.0.0",
+  "description": "This is a test project made by pearly peaches",
+  "host_permissions": [ "https://www.youtube.com/*"],
+  "content_scripts":
+  [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["main.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources":
+  [
+    {
+      "resources":
+      [
+        "assets/images/*.png"
+      ],
+      "matches": ["*://*/*"]
+    }],
+  "action":
+  {
+    "default_icon":
+    {
+      "16": "assets/icons/9kghzk.png",
+      "24": "assets/icons/9kghzk.png",
+      "32": "assets/icons/9kghzk.png",
+      "128": "assets/icons/9kghzk.png"
+    },
+    "default_popup": "popup.html",
+    "default_title": "First extension by pearly"
+  },
+  "icons":
+  {
+    "16": "assets/icons/9kghzk.png",
+    "24": "assets/icons/9kghzk.png",
+    "32": "assets/icons/9kghzk.png",
+    "128": "assets/icons/9kghzk.png"
+  },
+  "background":
+  {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "permissions":
+  [
+    "storage"
+  ]
+}
