@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="US-ASCII">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>First extension made by Pearly</title>
+        <link rel="stylesheet" href="bulma.min.css" />
+    </head>
+
+    <body style="background-color:lightblue">
+
+        <div class="container m-2">
+            <h1 style="color:darkorange; font-family: 'Niagara Engraved', sans-serif, inherit; "> First extension made by Pearly &#128008 </h1>
+
+            <!-- Buttons for toggling the images-->
+            <div class="field">
+                <label class="label"> Toggle Images &#8970 &#128572 &#8971</label>
+                <span class="tag is-outlined is-medium is-primary" id="enable"> Enabled</span>
+                <span class="tag is-outlined is-medium is-danger" id="disable">Disabled</span>
+
+            </div>
+        </div>
+
+        <!-- Dropdown for the cat opacity-->
+        <div class="container m-2">
+            <div class="field">
+                <label class="label"> Change cat opacity </label>
+                <div class="select">
+                    <select id="opacity" style="border-color: darkorange; background-color: lightslategrey; --bulma-active-background-l-delta: hsl(0, 0%, 96%); --bulma-dropdown-divider-background-color: hsl(0, 0%, 96%)" >
+                        <option value="100" style="background-color: darkslateblue; " > 100%</option>
+                        <option value="75" style="background-color: slateblue"> 75%</option>
+                        <option value="50" style="background-color: mediumslateblue"> 50%</option>
+                        <option value="25" style="background-color: cornflowerblue"> 25%</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+
+
+<!--        <h3 style="color:darkslategray; font-family: sans-serif, inherit; "> &#8970 &#128572 &#8971</h3> &lt;!&ndash; NOTE: for disabled feedback: &#	128575 &ndash;&gt;-->
+<!--        <button id="ToggleButton" style=" background-color: lavender; border-color: darkorange; scale: inherit; align-content: center">Toggle Images</button>-->
+
+<!--        <h3 style="color:darkslategray">Cat Opacity</h3>-->
+
+    </body>
+
+    <script src="popup.js"></script>
+</html>
+</docutypehtml>
